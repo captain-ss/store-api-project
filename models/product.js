@@ -11,7 +11,7 @@ const productsSchema=new mongoose.Schema({
         type:Number,
         required:[true,'price must be provided']
     },
-    feature:
+    featured:
     {
         type:Boolean,
         default:false,
@@ -20,7 +20,7 @@ const productsSchema=new mongoose.Schema({
         type:Number,
         default:4.5,
     },
-    createdat:{
+    createdAt:{
         type:Date,
         default:Date.now(),
     },
